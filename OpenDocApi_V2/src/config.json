@@ -1,0 +1,14 @@
+{
+  "port" : 56793,
+  "sequelize": {
+    "database": "opendoc_local",
+    "dialect": "mysql",
+    "host": "127.0.0.1",
+    "username": "root",
+    "password": ""
+  },
+  "https": {
+    "key": "../sslcert/server.key",
+    "cert": "../sslcert/server.cert"
+  }
+}
