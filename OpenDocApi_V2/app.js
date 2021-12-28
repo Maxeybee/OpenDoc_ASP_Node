@@ -6,14 +6,14 @@ const https = require('https');
 const cors = require('cors');
 
 // lauch config from params
-const config = require('./config');
-const {https:{ key, cert}, port, isHttps, serviceName} = config;
-const credentials = {key, cert};
+const config = require('./src/config');
+const { https: { key, cert }, port, isHttps, serviceName } = config;
+const credentials = { key, cert };
 
 //setup app & its routes
 const app = express();
 app.use(cors());
-const routes = require('./api/routes/index.route');
+const routes = require('./src/api/routes/index.route');
 app.use(routes);
 
 //start http server

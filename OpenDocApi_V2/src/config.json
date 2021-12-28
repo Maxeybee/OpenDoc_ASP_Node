@@ -1,5 +1,5 @@
 {
-  "port" : 56793,
+  "port" : 8082,
   "sequelize": {
     "database": "opendoc_local",
     "dialect": "mysql",

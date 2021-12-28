@@ -29,8 +29,32 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="app.js" />
+    <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\api\routes\index.route.js" />
+    <Content Include="src\api\routes\lesson.route.js" />
+    <Content Include="src\config.js" />
+    <Content Include="src\config.json" />
+    <Content Include="src\database\database.sequelize.js" />
+    <Content Include="src\database\initializeDatabase.sequelize.js" />
+    <Content Include="src\database\Models\Chapter.sequelize.js" />
+    <Content Include="src\database\Models\Comments.sequelize.js" />
+    <Content Include="src\database\Models\Lesson.sequelize.js" />
+    <Content Include="src\database\Models\Role.sequelize.js" />
+    <Content Include="src\database\Models\User.sequelize.js" />
+    <Content Include="src\database\Models\User_Read_Chapter.sequelize.js" />
+    <Content Include="src\database\setAssociations.sequelize.js" />
+    <Content Include="src\sslcert\server.cert" />
+    <Content Include="src\sslcert\server.key" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\api\" />
+    <Folder Include="src\api\routes\" />
+    <Folder Include="src\database\" />
+    <Folder Include="src\database\Models\" />
+    <Folder Include="src\sslcert\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
 </Project>
