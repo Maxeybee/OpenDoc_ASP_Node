@@ -3,9 +3,9 @@
   "sequelize": {
     "database": "opendoc_local",
     "dialect": "mysql",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "username": "root",
-    "password": ""
+    "password": "root"
   },
   "https": {
     "key": "../sslcert/server.key",

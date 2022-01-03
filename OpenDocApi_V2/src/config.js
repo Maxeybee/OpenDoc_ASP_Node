@@ -9,7 +9,14 @@ function buildConfig(argv) {
     'https': {
         'key': argv.key ,
         'cert': argv.cert,
-    }, 
+    },
+    // 'sequelize': {
+    //     'database': argv.database,
+    //     'dialect': argv.dialect,
+    //     'host': argv.host,
+    //     'username': argv.username,
+    //     'password': argv.password
+    // }
     };
 
     config.isHttps = isHttps(config);

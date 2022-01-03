@@ -1,8 +1,7 @@
-const config = require('../config');
+const config = require('../config.json');
 const Sequelize = require('sequelize');
 const setAssociations = require('./setAssociations.sequelize');
 const initializeDatabase = require('./initializeDatabase.sequelize');
-
 
 const sequelize = new Sequelize(
     {
@@ -15,21 +14,20 @@ const sequelize = new Sequelize(
 );
 
 const modelsToDefine = [
-    // require('./entities/Chapter'),
-    // //require('./entities/Role'),
-    // require('./entities/Comments'),
-    // require('./entities/Lesson'),
-    // require('./entities/User_Read_Chapter'),
-    // require('./entities/User')
+    require('./models/Chapter.sequelize'),
+    require('./models/Comment.sequelize'),
+    require('./models/Lesson.sequelize'),
+    require('./models/User_Read_Chapter.sequelize'),
+    require('./models/User.sequelize')
 ];
 
 for (const modelToDefine of modelsToDefine) {
     modelToDefine(sequelize);
 }
 
-//setAssociations(sequelize);
+setAssociations(sequelize);
 
-//initializeDatabase(sequelize);
+initializeDatabase(sequelize);
 
 
-//module.exports = sequelize;
+module.exports = sequelize;
