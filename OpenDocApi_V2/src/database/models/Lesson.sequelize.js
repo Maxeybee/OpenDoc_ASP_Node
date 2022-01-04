@@ -15,14 +15,6 @@ module.exports = (sequelize) => {
             type: DataTypes.TEXT,
             allowNull: false
         },
-        publishDate: {
-            type: DataTypes.DATE,
-            allowNull: false
-        },
-        lastEditedDate: {
-            type: DataTypes.DATE,
-            allowNull: true
-        },
         reputation: {
             type: DataTypes.INTEGER,
             allowNull: false
@@ -32,7 +24,7 @@ module.exports = (sequelize) => {
             allowNull: false
         }
     }, {
-        timestamps: false,
+        timestamps: true,
         freezeTableName: true
     });
 };
