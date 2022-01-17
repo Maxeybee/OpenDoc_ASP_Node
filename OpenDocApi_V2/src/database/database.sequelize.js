@@ -29,5 +29,4 @@ setAssociations(sequelize);
 
 initializeDatabase(sequelize);
 
-
 module.exports = sequelize;

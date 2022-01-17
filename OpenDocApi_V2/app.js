@@ -27,8 +27,6 @@ const httpServer = http.createServer(app);
 httpServer.listen(port);
 console.log(`[${serviceName}] http server listening at port ${port}`);
 
-
-
 //remove comment for start https server
 // if(isHttps) {
 //   const httpsServer = https.createServer(credentials, app);

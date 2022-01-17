@@ -5,12 +5,9 @@ module.exports = (sequelize) => {
     
     user_read_chapter.belongsTo(chapter);
 
-    //Create foreign key for the Comments model
     comment.belongsTo(chapter);
     comment.belongsTo(user);
 
     lesson.belongsTo(user);
     chapter.belongsTo(lesson);
-
-    //role.belongsTo(user);
 }

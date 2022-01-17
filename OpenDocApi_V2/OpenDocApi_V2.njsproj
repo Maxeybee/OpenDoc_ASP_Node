@@ -32,8 +32,10 @@
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+    <Content Include="src\api\controllers\lesson.controller.js" />
     <Content Include="src\api\routes\index.route.js" />
     <Content Include="src\api\routes\lesson.route.js" />
+    <Content Include="src\api\services\lesson.service.js" />
     <Content Include="src\config.js" />
     <Content Include="src\config.json" />
     <Content Include="src\database\database.sequelize.js" />
@@ -51,7 +53,9 @@
   <ItemGroup>
     <Folder Include="src\" />
     <Folder Include="src\api\" />
+    <Folder Include="src\api\controllers\" />
     <Folder Include="src\api\routes\" />
+    <Folder Include="src\api\services\" />
     <Folder Include="src\database\" />
     <Folder Include="src\database\Models\" />
     <Folder Include="src\sslcert\" />
